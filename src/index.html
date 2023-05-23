@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-wrap: wrap;
+            align-items: stretch;
+        }
+
+        header {
+            width: 100%;
+            height: auto;
+        }
+
+        main {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: stretch;
+            align-content: center;
+        }
+
+        footer {
+            width: 100%;
+            height: 28rem;
+            position: relative;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url("../images/v3_1013.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            opacity: 1;
+        }
+
+        .container {
+            clear: both;
+            width: 60%;
+            min-height: 45rem;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            max-height: 100%;
+            overflow: hidden;
+            /* 초과하는 부분을 자르도록 설정합니다. */
+        }
+
+        p {
+            width: auto;
+            max-width: 100%;
+            color: rgba(76, 102, 118, 1);
+            position: relative;
+            top: 3px;
+            font-family: Montserrat;
+            font-weight: Bold;
+            font-size: 36px;
+            opacity: 1;
+            text-align: center;
+        }
+
+        #subject {
+            width: auto;
+            max-width: 100%;
+            color: rgba(76, 102, 118, 1);
+            position: relative;
+            top: 3px;
+            font-family: Montserrat;
+            font-weight: Bold;
+            font-size: 60px;
+            opacity: 1;
+            text-align: center;
+        }
+
+        .img_wrapper {
+            width: 60%;
+        }
+
+        hr {
+            width: 20%;
+            height: 5px;
+            background: rgba(76, 102, 118, 1);
+            opacity: 1;
+            position: rerlative;
+            overflow: hidden;
+        }
+
+        #quit {
+            clear: both;
+            width: 60%;
+            min-height: 10rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        #logo .img_wrapper {
+            width: 100%;
+        }
+
+        header>img {
+            width: 10%;
+            height: auto;
+        }
+
+        .container div {
+            padding-top: 5rem;
+        }
+
+        .footer_text {
+            color: white;
+            font-size: 12px;
+        }
+
+        footer p {
+            font-size: 24px;
+        }
+
+        footer .img_wrapper {
+            width: 20%;
+            max-height: 10%;
+            overflow: hidden;
+        }
+
+        footer span {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 2rem;
+        }
+
+        #footer_div {
+            display: flex;
+        }
+
+        footer>div {
+            width: 100%;
+            height: 100%;
+            background: rgba(149, 196, 196, 40);
+            opacity: 0.4;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="../images/v3_1334.png">
+    </header>
+    <main>
+        <div id="logo" class="container">
+            <div class="img_wrapper">
+                <img src="../images/v3_819.png">
+            </div>
+            <div>
+                <p id="subject">도서 대출 프로그램</p>
+                <hr />
+                <p>환영합니다</p>
+            </div>
+        </div>
+        <div id="book" class="container">
+            <div class="img_wrapper">
+                <img src="../images/v3_859.png">
+            </div>
+            <div>
+                <hr />
+                <p>도서 관리</p>
+            </div>
+        </div>
+        <div id="member" class="container">
+            <div class="img_wrapper">
+                <img src="../images/v3_1338.png">
+            </div>
+            <div>
+                <hr />
+                <p>회원 관리</p>
+            </div>
+        </div>
+        <div id="rent" class="container">
+            <div class="img_wrapper">
+                <img src="../images/v3_1350.png">
+            </div>
+            <div>
+                <hr />
+                <p>대출 관리</p>
+            </div>
+        </div>
+        <div id="quit" class="container">
+            <p>종료하기</p>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <div>
+                <p>HYK 도서대출관리</p>
+                <hr />
+                <div id="footer_div">
+                    <span>
+                        <div class="img_wrapper">
+                            <img src="../images/v3_1597.png">
+                        </div>
+                        <p>
+                            MEET US IN PERSON
+                        </p>
+                        <div>
+                            <p class="footer_text">
+                                8776 Juniper Street
+                                <br />
+                                Unit #204
+                                <br />
+                                Merriweather, Ontorio
+                                <br />
+                                Canada
+                                <br />
+                            </p>
+                        </div>
+                    </span>
+                    <span>
+                        <div class="img_wrapper">
+                            <img src="../images/v3_1602.png">
+                        </div>
+                        <p>
+                            MEET US IN PERSON
+                        </p>
+                        <div>
+                            <p class="footer_text">
+                                8776 Juniper Street
+                                <br />
+                                Unit #204
+                                <br />
+                                Merriweather, Ontorio
+                                <br />
+                                Canada
+                                <br />
+                            </p>
+                        </div>
+                    </span>
+                    <span>
+                        <div class="img_wrapper">
+                            <img src="../images/v3_1608.png">
+                        </div>
+                        <p>
+                            MEET US IN PERSON
+                        </p>
+                        <div>
+                            <p class="footer_text">
+                                8776 Juniper Street
+                                <br />
+                                Unit #204
+                                <br />
+                                Merriweather, Ontorio
+                                <br />
+                                Canada
+                                <br />
+                            </p>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
