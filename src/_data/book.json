@@ -1,0 +1,46 @@
+{
+    "posts": [
+      {
+        "name": "책 1",
+        "rank": "1",
+        "updown":"2"
+      },
+      {
+        "name": "책 2",
+        "rank": "2",
+        "updown":"new"
+      },{
+        "name": "책 3",
+        "rank": "3",
+        "updown":"2"
+      },{
+        "name": "책 4",
+        "rank": "4",
+        "updown":"5"
+      },{
+        "name": "책 5",
+        "rank": "5",
+        "updown":"4"
+      },{
+        "name": "책 6",
+        "rank": "6",
+        "updown":"12"
+      },{
+        "name": "책 7",
+        "rank": "7",
+        "updown":"9"
+      },{
+        "name": "책 8",
+        "rank": "8",
+        "updown":"3"
+      },{
+        "name": "책 9",
+        "rank": "9",
+        "updown":"4"
+      },{
+        "name": "책 10",
+        "rank": "10",
+        "updown":"2"
+      }
+    ]
+  }

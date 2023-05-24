@@ -2,36 +2,23 @@
     <div class="wrap">
         <div class="roller original" id="roller1" style="left: -313px;">
             <ul>
-                <li class="SSE"><a href="#"><strong class="name" style="color : #e8ebeb;">SSE</strong><span
-                            class="status up"><span class="num" style="color : #e8ebeb;">3000</span><span class="rate"
-                                style="color : #e8ebeb;"><em>0.78%</em></span></span></a></li>
-                <li class="HANGSENG"><a href="#"><strong class="name" style="color : #e8ebeb;">HANGSENG</strong><span
-                            class="status up"><span class="num" style="color : #e8ebeb;">15318</span><span class="rate"
-                                style="color : #e8ebeb;"><em>1.0%</em></span></span></a></li>
-                <li class="S&P500"><a href="#"><strong class="name" style="color : #e8ebeb;">S&P500</strong><span
-                            class="status down"><span class="num" style="color : #e8ebeb;">3831</span><span class="rate"
-                                style="color : #e8ebeb;"><em>-0.74%</em></span></span></a></li>
-                <li class="DOW JONES"><a href="#"><strong class="name" style="color : #e8ebeb;">DOW
-                            JONES</strong><span class="status up"><span class="num"
-                                style="color : #e8ebeb;">31839</span><span class="rate"
-                                style="color : #e8ebeb;"><em>0.01%</em></span></span></a></li>
-                <li class="NASDAQ"><a href="#"><strong class="name" style="color : #e8ebeb;">NASDAQ</strong><span
-                            class="status down"><span class="num" style="color : #e8ebeb;">10971</span><span
-                                class="rate" style="color : #e8ebeb;"><em>-2.04%</em></span></span></a></li>
-                <li class="FTSE 100"><a href="#"><strong class="name" style="color : #e8ebeb;">FTSE
-                            100</strong><span class="status up"><span class="num"
-                                style="color : #e8ebeb;">7056</span><span class="rate"
-                                style="color : #e8ebeb;"><em>0.61%</em></span></span></a></li>
-                <li class="EURONEXT"><a href="#"><strong class="name" style="color : #e8ebeb;">EURONEXT</strong><span
-                            class="status up"><span class="num" style="color : #e8ebeb;">1189</span><span class="rate"
-                                style="color : #e8ebeb;"><em>0.4%</em></span></span></a></li>
-                <li class="DAX"><a href="#"><strong class="name" style="color : #e8ebeb;">DAX</strong><span
-                            class="status up"><span class="num" style="color : #e8ebeb;">13196</span><span class="rate"
-                                style="color : #e8ebeb;"><em>1.09%</em></span></span></a></li>
-                <li class="CAC 40"><a href="#"><strong class="name" style="color : #e8ebeb;">CAC
-                            40</strong><span class="status up"><span class="num"
-                                style="color : #e8ebeb;">6276</span><span class="rate"
-                                style="color : #e8ebeb;"><em>0.41%</em></span></span></a></li>
+                {% for book in site.data.book.posts %}
+                <li >
+                    <strong class="{{ book.name }}">
+                        {{ book.rank }}위 &nbsp;:&nbsp;
+                    </strong>
+                    <span>
+                        {{ book.name }}
+                    </span>
+                    <span class="status up"></span>
+                    <span>
+                        <em>
+                            {{ book.updown }}
+                        </em>
+                    </span>
+                    </span>
+                </li>
+                {% endfor %}
             </ul>
         </div>
     </div>
