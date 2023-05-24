@@ -14,11 +14,6 @@ layout:
   bgcolor: "#c8e6c9"
   width: "1200px"
 
-sass:
-  load_paths:
-    - _scss
-    - node_modules/bootstrap/scss
-
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap

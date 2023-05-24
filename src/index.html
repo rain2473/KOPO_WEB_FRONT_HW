@@ -1,124 +1,44 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet" />
-    <link href="./css/style.css" rel="stylesheet" />
-    <title>Document</title>
-</head>
-
-<body>
-    <header>
-        <img src="../images/v3_1334.png">
-    </header>
-    <main>
-        <div id="logo" class="container">
-            <div class="img_wrapper">
-                <img src="../images/v3_819.png">
-            </div>
-            <div>
-                <p id="subject">도서 대출 프로그램</p>
-                <hr />
-                <p>환영합니다</p>
-            </div>
-        </div>
-        <div id="book" class="container">
-            <div class="img_wrapper">
-                <img src="../images/v3_859.png">
-            </div>
-            <div>
-                <hr />
-                <p>도서 관리</p>
-            </div>
-        </div>
-        <div id="member" class="container">
-            <div class="img_wrapper">
-                <img src="../images/v3_1338.png">
-            </div>
-            <div>
-                <hr />
-                <p>회원 관리</p>
-            </div>
-        </div>
-        <div id="rent" class="container">
-            <div class="img_wrapper">
-                <img src="../images/v3_1350.png">
-            </div>
-            <div>
-                <hr />
-                <p>대출 관리</p>
-            </div>
-        </div>
-        <div id="quit" class="container">
-            <p>종료하기</p>
-        </div>
-    </main>
-    <footer>
-        <div>
-            <p>HYK 도서대출관리</p>
-        </div>
-            <div id="footer_div">
-                <span>
-                    <div class="img_wrapper">
-                        <img src="../images/v3_1597.png">
-                    </div>
-                    <p>
-                        주소
-                    </p>
-                    <div>
-                        <p class="footer_text">
-                            8776 Juniper Street
-                            <br />
-                            Unit #204
-                            <br />
-                            Merriweather, Ontorio
-                            <br />
-                            Canada
-                            <br />
-                        </p>
-                    </div>
-                </span>
-                <span>
-                    <div class="img_wrapper">
-                        <img src="../images/v3_1602.png">
-                    </div>
-                    <p>
-                        연락처
-                    </p>
-                    <div>
-                        <p class="footer_text">
-                            Email us
-                            <br />
-                            contact@minimal.com
-                            <br />
-                            Contact form
-                            <br />
-                            Scroll down
-                            <br />
-                        </p>
-                    </div>
-                </span>
-                <span>
-                    <div class="img_wrapper">
-                        <img src="../images/v3_1608.png">
-                    </div>
-                    <p>
-                        SNS
-                    </p>
-                    <div>
-                        <p class="footer_text">
-                            Facebook
-                            <br />
-                            Twitter
-                            <br />
-                            Linkdin
-                            <br />
-                        </p>
-                    </div>
-                </span>
-        </div>
-    </footer>
-</body>
-
-</html>
+---
+layout : base
+---
+{% include rollingbanner.html %}
+<div id="logo" class="container">
+    <div class="img_wrapper">
+        <img src="./images/v3_819.png">
+    </div>
+    <div>
+        <p id="subject">도서 대출 프로그램</p>
+        <hr />
+        <p>환영합니다</p>
+    </div>
+</div>
+<div id="book" class="container">
+    <div class="img_wrapper">
+        <img src="./images/v3_859.png">
+    </div>
+    <div>
+        <hr />
+        <p>도서 관리</p>
+    </div>
+</div>
+<div id="member" class="container">
+    <div class="img_wrapper">
+        <img src="./images/v3_1338.png">
+    </div>
+    <div>
+        <hr />
+        <p>회원 관리</p>
+    </div>
+</div>
+<div id="rent" class="container">
+    <div class="img_wrapper">
+        <img src="./images/v3_1350.png">
+    </div>
+    <div>
+        <hr />
+        <p>대출 관리</p>
+    </div>
+</div>
+<div id="quit" class="container">
+    <p>종료하기</p>
+</div>

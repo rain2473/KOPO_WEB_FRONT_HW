@@ -5,120 +5,182 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet" />
     <link href="./css/style.css" rel="stylesheet" />
-    <title>Document</title>
+    <title>BookManager</title>
+    <link href="./images/v3_1334.png" rel="shortcut icon" type="image/x-icon">
+    <link href="./css/rollingbanner-js.css" rel="stylesheet" type="text/css">
+    <script src="./script/rollingbanner.js"></script>
 </head>
 
 <body>
     <header>
-        <img src="../images/v3_1334.png">
-    </header>
-    <main>
-        <div id="logo" class="container">
-            <div class="img_wrapper">
-                <img src="../images/v3_819.png">
-            </div>
-            <div>
-                <p id="subject">도서 대출 프로그램</p>
-                <hr />
-                <p>환영합니다</p>
-            </div>
+        <nav>
+    <div class="img_wrapper">
+        <img src="./images/v3_1334.png">
+    </div>
+    <div>
+        <div>
+            <p>도서관리</p>
         </div>
-        <div id="book" class="container">
-            <div class="img_wrapper">
-                <img src="../images/v3_859.png">
-            </div>
-            <div>
-                <hr />
-                <p>도서 관리</p>
-            </div>
+        <div>
+            <p>회원관리</p>
         </div>
-        <div id="member" class="container">
-            <div class="img_wrapper">
-                <img src="../images/v3_1338.png">
-            </div>
-            <div>
-                <hr />
-                <p>회원 관리</p>
-            </div>
+        <div>
+            <p>대출관리</p>
         </div>
-        <div id="rent" class="container">
-            <div class="img_wrapper">
-                <img src="../images/v3_1350.png">
-            </div>
-            <div>
-                <hr />
-                <p>대출 관리</p>
-            </div>
-        </div>
-        <div id="quit" class="container">
+        <div>
             <p>종료하기</p>
         </div>
+    </div>
+</nav>
+    </header>
+    <main>
+        <div class="rollingbanner">
+    <div class="wrap">
+        <div class="roller original" id="roller1" style="left: -313px;">
+            <ul>
+                <li class="SSE"><a href="#"><strong class="name" style="color : #e8ebeb;">SSE</strong><span
+                            class="status up"><span class="num" style="color : #e8ebeb;">3000</span><span class="rate"
+                                style="color : #e8ebeb;"><em>0.78%</em></span></span></a></li>
+                <li class="HANGSENG"><a href="#"><strong class="name" style="color : #e8ebeb;">HANGSENG</strong><span
+                            class="status up"><span class="num" style="color : #e8ebeb;">15318</span><span class="rate"
+                                style="color : #e8ebeb;"><em>1.0%</em></span></span></a></li>
+                <li class="S&P500"><a href="#"><strong class="name" style="color : #e8ebeb;">S&P500</strong><span
+                            class="status down"><span class="num" style="color : #e8ebeb;">3831</span><span class="rate"
+                                style="color : #e8ebeb;"><em>-0.74%</em></span></span></a></li>
+                <li class="DOW JONES"><a href="#"><strong class="name" style="color : #e8ebeb;">DOW
+                            JONES</strong><span class="status up"><span class="num"
+                                style="color : #e8ebeb;">31839</span><span class="rate"
+                                style="color : #e8ebeb;"><em>0.01%</em></span></span></a></li>
+                <li class="NASDAQ"><a href="#"><strong class="name" style="color : #e8ebeb;">NASDAQ</strong><span
+                            class="status down"><span class="num" style="color : #e8ebeb;">10971</span><span
+                                class="rate" style="color : #e8ebeb;"><em>-2.04%</em></span></span></a></li>
+                <li class="FTSE 100"><a href="#"><strong class="name" style="color : #e8ebeb;">FTSE
+                            100</strong><span class="status up"><span class="num"
+                                style="color : #e8ebeb;">7056</span><span class="rate"
+                                style="color : #e8ebeb;"><em>0.61%</em></span></span></a></li>
+                <li class="EURONEXT"><a href="#"><strong class="name" style="color : #e8ebeb;">EURONEXT</strong><span
+                            class="status up"><span class="num" style="color : #e8ebeb;">1189</span><span class="rate"
+                                style="color : #e8ebeb;"><em>0.4%</em></span></span></a></li>
+                <li class="DAX"><a href="#"><strong class="name" style="color : #e8ebeb;">DAX</strong><span
+                            class="status up"><span class="num" style="color : #e8ebeb;">13196</span><span class="rate"
+                                style="color : #e8ebeb;"><em>1.09%</em></span></span></a></li>
+                <li class="CAC 40"><a href="#"><strong class="name" style="color : #e8ebeb;">CAC
+                            40</strong><span class="status up"><span class="num"
+                                style="color : #e8ebeb;">6276</span><span class="rate"
+                                style="color : #e8ebeb;"><em>0.41%</em></span></span></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="logo" class="container">
+    <div class="img_wrapper">
+        <img src="./images/v3_819.png">
+    </div>
+    <div>
+        <p id="subject">도서 대출 프로그램</p>
+        <hr />
+        <p>환영합니다</p>
+    </div>
+</div>
+<div id="book" class="container">
+    <div class="img_wrapper">
+        <img src="./images/v3_859.png">
+    </div>
+    <div>
+        <hr />
+        <p>도서 관리</p>
+    </div>
+</div>
+<div id="member" class="container">
+    <div class="img_wrapper">
+        <img src="./images/v3_1338.png">
+    </div>
+    <div>
+        <hr />
+        <p>회원 관리</p>
+    </div>
+</div>
+<div id="rent" class="container">
+    <div class="img_wrapper">
+        <img src="./images/v3_1350.png">
+    </div>
+    <div>
+        <hr />
+        <p>대출 관리</p>
+    </div>
+</div>
+<div id="quit" class="container">
+    <p>종료하기</p>
+</div>
     </main>
     <footer>
         <div>
-            <p>HYK 도서대출관리</p>
+    <p>HYK 도서대출관리</p>
+</div>
+<div id="footer_div">
+    <span>
+        <div class="img_wrapper">
+            <img src="./images/v3_1597.png">
         </div>
-            <div id="footer_div">
-                <span>
-                    <div class="img_wrapper">
-                        <img src="../images/v3_1597.png">
-                    </div>
-                    <p>
-                        주소
-                    </p>
-                    <div>
-                        <p class="footer_text">
-                            8776 Juniper Street
-                            <br />
-                            Unit #204
-                            <br />
-                            Merriweather, Ontorio
-                            <br />
-                            Canada
-                            <br />
-                        </p>
-                    </div>
-                </span>
-                <span>
-                    <div class="img_wrapper">
-                        <img src="../images/v3_1602.png">
-                    </div>
-                    <p>
-                        연락처
-                    </p>
-                    <div>
-                        <p class="footer_text">
-                            Email us
-                            <br />
-                            contact@minimal.com
-                            <br />
-                            Contact form
-                            <br />
-                            Scroll down
-                            <br />
-                        </p>
-                    </div>
-                </span>
-                <span>
-                    <div class="img_wrapper">
-                        <img src="../images/v3_1608.png">
-                    </div>
-                    <p>
-                        SNS
-                    </p>
-                    <div>
-                        <p class="footer_text">
-                            Facebook
-                            <br />
-                            Twitter
-                            <br />
-                            Linkdin
-                            <br />
-                        </p>
-                    </div>
-                </span>
+        <p>
+            주소
+        </p>
+        <div>
+            <p class="footer_text">
+                8776 Juniper Street
+                <br />
+                Unit #204
+                <br />
+                Merriweather, Ontorio
+                <br />
+                Canada
+                <br />
+            </p>
         </div>
+    </span>
+    <span>
+        <div class="img_wrapper">
+            <img src="./images/v3_1602.png">
+        </div>
+        <p>
+            연락처
+        </p>
+        <div>
+            <p class="footer_text">
+                Email us
+                <br />
+                contact@minimal.com
+                <br />
+                Contact form
+                <br />
+                Scroll down
+                <br />
+            </p>
+        </div>
+    </span>
+    <span>
+        <div class="img_wrapper">
+            <img src="./images/v3_1608.png">
+        </div>
+        <p>
+            SNS
+        </p>
+        <div>
+            <p class="footer_text">
+                Facebook
+                <br />
+                Twitter
+                <br />
+                Linkdin
+                <br />
+            </p>
+        </div>
+    </span>
+</div>
     </footer>
+    <script>
+        exec();
+    </script>
 </body>
 
 </html>
