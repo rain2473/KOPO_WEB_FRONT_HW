@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   width: 100%;
   height: 100%;
@@ -38,7 +39,8 @@ footer {
   background: #e8ebeb;
   opacity: 1;
   flex-direction: column;
-  flex: 15;;
+  flex: 15;
+  ;
 }
 
 nav {
@@ -51,20 +53,20 @@ nav {
   align-items: center;
 }
 
-nav p{
-  font-size: 20px;
+nav p {
+  font-size: 1.4vw;
 }
 
 nav div {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 2vw;
+  padding-right: 2vw;
   height: 100%;
 }
 
-nav .img_wrapper{
+nav .img_wrapper {
   height: 100%;
   width: auto;
 }
@@ -92,10 +94,9 @@ p {
   max-width: 100%;
   color: rgba(76, 102, 118, 1);
   position: relative;
-  top: 3px;
   font-family: Montserrat;
   font-weight: Bold;
-  font-size: 36px;
+  font-size: 2.4vw;
   opacity: 1;
   text-align: center;
 }
@@ -105,21 +106,23 @@ p {
   max-width: 100%;
   color: rgba(76, 102, 118, 1);
   position: relative;
-  top: 3px;
   font-family: Montserrat;
   font-weight: Bold;
-  font-size: 60px;
+  font-size: 4vw;
   opacity: 1;
   text-align: center;
 }
 
 .img_wrapper {
   width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 hr {
-  width: 20%;
-  height: 5px;
+  width: 3vw;
+  height: 0.5vh;
   background: rgba(76, 102, 118, 1);
   opacity: 1;
   position: rerlative;
@@ -133,7 +136,7 @@ hr {
 #quit {
   clear: both;
   width: 60%;
-  min-height: 10rem;
+  min-height: 10vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -146,25 +149,25 @@ hr {
 }
 
 header img {
-  max-width: 5rem;
+  max-width: 5vw;
   height: auto;
 }
 
-header > div{
-  height: 10rem;
+header>div {
+  height: 10vh;
 }
 
 .container:not(#logo) div {
-  padding-top: 2rem;
+  padding-top: 2vh;
 }
 
 .footer_text {
-  color: rgba(76, 102, 118, 1);
-  font-size: 12px;
+  font-weight: normal;
+  font-size: 1.0vw;
 }
 
 footer p {
-  font-size: 24px;
+  font-size: 1.6vw;
 }
 
 footer .img_wrapper {
@@ -178,6 +181,7 @@ footer span {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 #footer_div {
@@ -190,11 +194,19 @@ footer span {
   max-width: 720px;
   max-height: 100%;
   overflow: hidden;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
 }
 
-footer > div {
+#footer_div span div:not(.img_wrapper) {
+  display: flex;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  justify-content: center;
+}
+
+footer>div {
   background: #95c4c4;
   opacity: 1;
   width: 100%;
