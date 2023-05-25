@@ -3,19 +3,13 @@
         <div class="roller original" id="roller1" style="left: -313px;">
             <ul>
                 {% for book in site.data.book.posts %}
-                <li >
-                    <strong class="{{ book.name }}">
-                        {{ book.rank }}위 &nbsp;:&nbsp;
-                    </strong>
-                    <span>
-                        {{ book.name }}
-                    </span>
-                    <span class="status up"></span>
-                    <span>
-                        <em>
-                            {{ book.updown }}
-                        </em>
-                    </span>
+                <li>
+                    <pre>{{ book.rank }}위 : {{ book.name }} ({{ book.updown }})</pre>
+                    <span class="{{book.change}}">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                            <title>Arrow Forward</title>
+                            <path class="arrow-path" d="M268 112l144 144-144 144M392 256H100" />
+                        </svg>
                     </span>
                 </li>
                 {% endfor %}
@@ -23,3 +17,4 @@
         </div>
     </div>
 </div>
+
