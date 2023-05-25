@@ -121,6 +121,11 @@ p {
   align-items: center;
 }
 
+.container > .img_wrapper.link-wrapper img:hover {
+  border: #227f80 solid 1vw;
+  transform : scale(0.99)
+}
+
 hr {
   width: 3vw;
   height: 0.5vh;
@@ -165,10 +170,6 @@ header>div {
 .footer_text {
   font-weight: normal;
   font-size: 1.0vw;
-}
-
-footer p {
-  font-size: 1.6vw;
 }
 
 footer .img_wrapper {

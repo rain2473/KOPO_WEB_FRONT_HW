@@ -13,3 +13,15 @@ function linkToPage() {
         });
     });
 }
+function cursorChange() {
+$(document).ready(function() {
+    $(".link-wrapper").hover(
+        function() {
+            $(this).css("cursor", "pointer");
+        },
+        function() {
+            $(this).css("cursor", "auto");
+        }
+    );
+});
+}
