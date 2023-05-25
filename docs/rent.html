@@ -9,27 +9,28 @@
     <link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet" />
     <link href="./css/style.css" rel="stylesheet" />
     <title>BookManager</title>
-    <link href="./images/v3_1334.png" rel="shortcut icon" type="image/x-icon">
+    <link href="./images/logo.png" rel="shortcut icon" type="image/x-icon">
     <link href="./css/rollingbanner-js.css" rel="stylesheet" type="text/css">
     <script src="./script/rollingbanner.js"></script>
+    <script src="./script/link.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
     <header>
         <nav>
-    <div class="img_wrapper">
+    <div class="img_wrapper link-wrapper"  data-href="../index.html">
         <img src="./images/logo.png">
     </div>
     <div>
         <div>
-            <p>도서관리</p>
+            <p class="link-wrapper" data-href="../book.html">도서관리</p>
         </div>
         <div>
-            <p>회원관리</p>
+            <p class="link-wrapper" data-href="../member.html">회원관리</p>
         </div>
         <div>
-            <p>대출관리</p>
+            <p class="link-wrapper" data-href="../rent.html">대출관리</p>
         </div>
         <div>
             <p>종료하기</p>
@@ -199,7 +200,7 @@
 </div>
 <div id="footer_div">
     <span>
-        <div class="img_wrapper">
+        <div class="img_wrapper link-wrapper">
             <img src="./images/location.png" style="width:50%">
         </div>
         <p>
@@ -212,7 +213,7 @@
         </div>
     </span>
     <span>
-        <div class="img_wrapper">
+        <div class="img_wrapper link-wrapper">
             <img src="./images/mail.png">
         </div>
         <p>
@@ -233,13 +234,13 @@
         </p>
         <div>
             <p class="footer_text">
-            <div class="img_wrapper">
+            <div class="img_wrapper link-wrapper" data-href="https://facebook.com/">
                 <img src="./images/facebook.png">
             </div>
-            <div class="img_wrapper">
+            <div class="img_wrapper link-wrapper" data-href="https://instagram.com/">
                 <img src="./images/instagram.png">
             </div>
-            <div class="img_wrapper">
+            <div class="img_wrapper link-wrapper" data-href="https://twitter.com/">
                 <img src="./images/twitter.png">
             </div>
             </p>
@@ -247,6 +248,9 @@
     </span>
 </div>
     </footer>
+    <script>
+        linkToPage()
+    </script>
 </body>
 
 </html>
