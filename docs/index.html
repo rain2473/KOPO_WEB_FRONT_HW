@@ -19,21 +19,35 @@
 <body>
     <header>
         <nav>
-    <div class="img_wrapper link-wrapper"  data-href="../index.html">
-        <img src="./images/logo.png">
-    </div>
-    <div>
-        <div>
-            <p class="link-wrapper" data-href="../book.html">도서관리</p>
+    <div class="container">
+        <div class="img_wrapper link-wrapper" data-href="../index.html">
+            <img src="./images/logo.png">
         </div>
         <div>
-            <p class="link-wrapper" data-href="../member.html">회원관리</p>
-        </div>
-        <div>
-            <p class="link-wrapper" data-href="../rent.html">대출관리</p>
-        </div>
-        <div>
-            <p>종료하기</p>
+            <div class="link-wrapper select" data-href="../book.html">
+                <p>도서관리</p>
+                <span class="one"></span>
+                <span class="two"></span>
+                <span class="three"></span>
+                <span class="four"></span>
+            </div>
+            <div class="link-wrapper select" data-href="../member.html">
+                <p>회원관리</p>
+                <span class="one"></span>
+                <span class="two"></span>
+                <span class="three"></span>
+                <span class="four"></span>
+            </div>
+            <div class="link-wrapper select" data-href="../rent.html">
+                <p>대출관리</p>
+                <span class="one"></span>
+                <span class="two"></span>
+                <span class="three"></span>
+                <span class="four"></span>
+            </div>
+            <div>
+                <p>종료하기</p>
+            </div>
         </div>
     </div>
 </nav>
@@ -161,34 +175,61 @@
     </div>
 </div>
 <div id="book" class="container">
-    <div class="img_wrapper link-wrapper" data-href="book.html">
+    <div class="img_wrapper link-wrapper select" data-href="book.html">
         <img src="./images/index/book.png">
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+        <span class="four"></span>
     </div>
     <div>
         <hr />
-        <p class="link-wrapper"  data-href = "book.html">도서 관리</p>
+        <div class="link-wrapper select"  data-href = "book.html">
+        <p>도서 관리</p>
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+        <span class="four"></span>
+    </div>
     </div>
 </div>
 <div id="member" class="container">
-    <div class="img_wrapper link-wrapper" data-href="member.html">
+    <div class="img_wrapper link-wrapper select" data-href="member.html">
         <img src="./images/index/member.png">
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+        <span class="four"></span>
     </div>
     <div>
         <hr />
-        <p class="link-wrapper"  data-href = "member.html">회원 관리</p>
+        <div class="link-wrapper select"  data-href = "member.html">
+        <p>회원 관리</p>
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+        <span class="four"></span>
+    </div>
     </div>
 </div>
 <div id="rent" class="container">
-    <div class="img_wrapper link-wrapper"  data-href = "rent.html">
+    <div class="img_wrapper link-wrapper select"  data-href = "rent.html">
         <img src="./images/index/rent.png">
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+        <span class="four"></span>
     </div>
     <div>
         <hr />
-        <p class="link-wrapper"  data-href = "rent.html">대출 관리</p>
+        <div class="link-wrapper select"  data-href = "rent.html">
+        <p>대출 관리</p>
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+        <span class="four"></span>
     </div>
-</div>
-<div id="quit" class="container">
-    <p>종료하기</p>
+    </div>
 </div>
 <script>
     exec();

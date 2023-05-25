@@ -12,6 +12,7 @@ body {
   flex-direction: column;
   align-items: stretch;
   margin: 0;
+  background-color: #fafbfb;
 }
 
 header {
@@ -32,15 +33,15 @@ main {
 footer {
   width: 100%;
   position: relative;
+  margin-top: 3%;
   bottom: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #e8ebeb;
+  background: #fafbfb;
   opacity: 1;
   flex-direction: column;
   flex: 15;
-  ;
 }
 
 nav {
@@ -49,21 +50,41 @@ nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+}
+
+nav > .container{
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+nav > .container div{
+  margin: 0;
+  padding: 0;
+}
+
+nav > .container div select{
+  padding-left: 2vw;
+  padding-right: 2vw;
 }
 
 nav p {
   font-size: 1.4vw;
-  color: #227f80;
+  color: #009591;
+  margin: 0;
 }
 
 nav div {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-left: 2vw;
-  padding-right: 2vw;
   height: 100%;
 }
 
@@ -121,8 +142,59 @@ p {
   align-items: center;
 }
 
-.container > .img_wrapper.link-wrapper img:hover {
-  transform : scale(0.9)
+.select{
+  position: relative;
+  margin: 20px auto;
+}
+.select span{
+  position: absolute;
+  background-color: #009591;
+  transition: .3s
+}
+.select p{
+  padding: 1vw;
+}
+.select .one{
+  height: 0;
+  width: 3px;
+  top: 0;
+  left: 0;
+}
+.select .two{
+  height: 3px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+}
+.select .three{
+  height: 0;
+  width: 3px;
+  bottom:0;
+  right:0
+}
+.select .four{
+  height: 3px;
+  width: 0;
+  top: 0;
+  right: 0;
+}
+.select:hover .one,
+.select:hover .three{
+  height: 100%;
+}
+.select:hover .two,
+.select:hover .four{
+  width: 100%;
+}
+.select:hover img{
+  transition-duration: .3s;
+  transition-delay: .3s;
+  opacity: .5;
+}
+.select:hover p{
+  transition-duration: .3s;
+  transition-delay: .3s;
+  opacity: .5;
 }
 
 hr {
@@ -162,10 +234,6 @@ header>div {
   height: 10vh;
 }
 
-.container:not(#logo) div {
-  padding-top: 2vh;
-}
-
 .footer_text {
   font-weight: normal;
   font-size: 1.0vw;
@@ -186,7 +254,7 @@ footer span {
 }
 
 #footer_div {
-  background: #e8ebeb;
+  background: #fafbfb;
   opacity: 1;
   display: flex;
   align-items: baseline;
@@ -207,11 +275,15 @@ footer span {
   justify-content: center;
 }
 
-footer>div {
-  background: #95c4c4;
+footer > div {
+  background: #009591;
   opacity: 1;
   width: 100%;
   height: auto;
   display: inline;
   justify-content: center;
+}
+
+footer > div > p {
+  color: #fafbfb;
 }
