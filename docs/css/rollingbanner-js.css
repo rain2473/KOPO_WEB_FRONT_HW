@@ -3,8 +3,8 @@
     height: 2.5vw;
     min-height: 20px;
     font-size: 1.4vw;
-    color: #009591;
-    background-color: #fafbfb;
+    color: #fafbfb;
+    background-color: #009591;
 }
 
 .rollingbanner>.wrap {
@@ -24,7 +24,7 @@
     width: 2.5vw;
     height: 100%;
     z-index: 1;
-    background: linear-gradient(to right, #fafbfb, #fafbfb77, #fafbfb00);
+    background: linear-gradient(to right, #009591, #00959177, #00959100);
 }
 
 .wrap::after {
@@ -35,7 +35,7 @@
     width: 2.5vw;
     height: 100%;
     z-index: 1;
-    background: linear-gradient(to right, #fafbfb00, #fafbfb77, #fafbfb);
+    background: linear-gradient(to right, #00959100, #00959177, #009591);
 }
 
 /* 애니메이션하는 요소 */
@@ -51,7 +51,7 @@
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    color: #009591;
+    color: #fafbfb;
 }
 
 .roller>ul>li {
@@ -100,7 +100,7 @@
 }
 
 .status.up .arrow-path {
-    stroke: rgb(255, 96, 96);
+    stroke: rgb(255, 20, 35);
     fill: none;
     stroke-linecap: square;
     stroke-miterlimit: 10;
@@ -108,7 +108,7 @@
 }
 
 .status.down .arrow-path {
-    stroke: rgb(96, 96, 255);
+    stroke: rgb(35, 20, 255);
     fill: none;
     stroke-linecap: square;
     stroke-miterlimit: 10;

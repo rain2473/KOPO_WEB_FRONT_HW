@@ -253,6 +253,15 @@ footer span {
   overflow: hidden;
 }
 
+footer p {
+  font-size: 1.4vw;
+  font-weight: normal;
+}
+
+footer img {
+  width: 50%;
+}
+
 #footer_div {
   background: #fafbfb;
   opacity: 1;
