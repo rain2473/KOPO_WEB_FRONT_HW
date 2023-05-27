@@ -1,4 +1,4 @@
-function exec() {
+function rollingBanner() {
     //롤링 배너 복제본 생성
     let roller = document.querySelector('.roller');
     roller.id = 'roller1';

@@ -2,7 +2,7 @@ function linkToPage() {
     $(document).ready(function () {
         $(".link-wrapper").click(function () {
             var url = $(this).data("href");
-            if(!url){
+            if (!url) {
                 alert(`${url}이 존재하지 않습니다!`);
             }
             if (url.indexOf("http") === 0 || url.indexOf("https") === 0) {
@@ -13,15 +13,19 @@ function linkToPage() {
         });
     });
 }
+
 function cursorChange() {
-$(document).ready(function() {
-    $(".link-wrapper").hover(
-        function() {
-            $(this).css("cursor", "pointer");
-        },
-        function() {
-            $(this).css("cursor", "auto");
-        }
-    );
-});
+    document.addEventListener("DOMContentLoaded", function () {
+        let arrows = document.querySelectorAll(".arrow_backward, .arrow_forward, .link-wrapper");
+
+        arrows.forEach(function (arrow) {
+            arrow.addEventListener("mouseenter", function () {
+                arrow.style.cursor = "pointer";
+            });
+
+            arrow.addEventListener("mouseleave", function () {
+                arrow.style.cursor = "auto";
+            });
+        });
+    });
 }

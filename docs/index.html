@@ -13,6 +13,7 @@
     <link href="./css/rollingbanner-js.css" rel="stylesheet" type="text/css">
     <script src="./script/rollingbanner.js"></script>
     <script src="./script/link.js"></script>
+    <script src="./script/mainbanner.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
@@ -166,7 +167,19 @@
 
 <div id="logo" class="container">
     <div class="img_wrapper">
+        <span class="arrow_backward">
+            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                <title>Arrow Backward</title>
+                <path class="arrow-path" d="M268 112l144 144-144 144M392 256H100" />
+            </svg>
+        </span>
         <img src="./images/index/mainbanner1.png">
+        <span class="arrow_forward">
+            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                <title>Arrow Forward</title>
+                <path class="arrow-path" d="M268 112l144 144-144 144M392 256H100" />
+            </svg>
+        </span>
     </div>
     <div>
         <p id="subject">도서 대출 프로그램</p>
@@ -232,7 +245,9 @@
     </div>
 </div>
 <script>
-    exec();
+    rollingBanner();
+    changeBanner();
+    animateBackground();
 </script>
     </main>
     <footer>

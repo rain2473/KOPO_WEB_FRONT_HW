@@ -222,7 +222,32 @@ hr {
 }
 
 #logo .img_wrapper {
-  width: 70%;
+  width: 80%;
+  height: 50vw;
+  margin-top: 5%;
+  background-image: linear-gradient(135deg, #00959100, #00959133, #00959150, #00959177, #00959199);
+}
+
+#logo .img_wrapper img{
+  width: 87.5%;
+  height: auto;
+}
+
+#logo .img_wrapper span{
+  width: 3vw;
+  height: auto;
+}
+
+#logo .img_wrapper span .arrow-path {
+  stroke: #e8ebeb50;
+  fill: none;
+  stroke-linecap: square;
+  stroke-miterlimit: 10;
+  stroke-width: 48;
+}
+
+#logo .img_wrapper .arrow_backward svg{
+  transform: rotateZ(180deg);
 }
 
 header img {
