@@ -13,6 +13,7 @@
     <link href="./css/rollingbanner-js.css" rel="stylesheet" type="text/css">
     <script src="./script/rollingbanner.js"></script>
     <script src="./script/base.js"></script>
+    <script src="./script/index.js"></script>
     <script src="./script/mainbanner.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
@@ -182,8 +183,8 @@
         </span>
     </div>
     <div>
-        <p id="subject">도서 대출 프로그램</p>
-        <p>환영합니다</p>
+        <p id="subject"></p>
+        <p id="subtitle"></p>
     </div>
 </div>
 <div id="book" class="container">
@@ -244,8 +245,15 @@
     </div>
 </div>
 <script>
+    const letters = [
+        "사람은 책을 만들고,",
+        "책은 사람을 만듭니다.",
+        "책을 읽읍시다!",
+        "도서 대출 프로그램"
+    ];
     rollingBanner();
     changeBanner();
+    typingSubject(letters, "#subject", false);
 </script>
         <span id="top_button">
             <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">

@@ -19,8 +19,8 @@ layout : base
         </span>
     </div>
     <div>
-        <p id="subject">도서 대출 프로그램</p>
-        <p>환영합니다</p>
+        <p id="subject"></p>
+        <p id="subtitle"></p>
     </div>
 </div>
 <div id="book" class="container">
@@ -81,6 +81,13 @@ layout : base
     </div>
 </div>
 <script>
+    const letters = [
+        "사람은 책을 만들고,",
+        "책은 사람을 만듭니다.",
+        "책을 읽읍시다!",
+        "도서 대출 프로그램"
+    ];
     rollingBanner();
     changeBanner();
+    typingSubject(letters, "#subject", false);
 </script>

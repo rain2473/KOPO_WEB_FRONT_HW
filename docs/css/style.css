@@ -136,6 +136,30 @@ p {
   text-align: center;
 }
 
+#subject::after {
+  content: '';
+  margin-left: .6rem;
+  border-right: 2px rgba(76, 102, 118, 1);
+  animation: cursor .9s infinite steps(2);
+}
+
+#subtitle::after {
+  content: '';
+  margin-left: .6rem;
+  border-right: 2px rgba(76, 102, 118, 1);
+  animation: cursor .9s infinite steps(2);
+  display: none;
+}
+
+.disable-after::after {
+  display: none;
+}
+
+@keyframes cursor {
+  from { border-right: 2px solid #222; }
+  to { border-right: 2px #fafbfb; }
+}
+
 .img_wrapper {
   width: 60%;
   display: flex;
