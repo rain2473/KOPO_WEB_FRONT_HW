@@ -43,7 +43,6 @@ function changeBanner() {
     startInterval();
 }
 
-
 function animateBackground() {
     let imgWrapper = document.querySelector("#logo .img_wrapper");
     let colors = ["#00959140", "#00959160", "#00959170", "#00959180", "#00959190", "#009591AA", "#009591BB", "#009591CC", "#009591DD", "#009591EE", "#009591FF"];
@@ -53,5 +52,5 @@ function animateBackground() {
     setInterval(function () {
         imgWrapper.style.backgroundImage = "linear-gradient(135deg, " + colors.slice(currentIndex, currentIndex + 5) + ")";
         currentIndex = (currentIndex + 1) % (colors.length / 2);
-    }, 150); // 0.1초마다 색상 변경
+    }, 100); // 0.1초마다 색상 변경
 }

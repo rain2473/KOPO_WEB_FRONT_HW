@@ -222,14 +222,14 @@ hr {
 }
 
 #logo .img_wrapper {
-  width: 80%;
-  height: 50vw;
+  width: 75%;
+  height: 44vw;
   margin-top: 5%;
   background-image: linear-gradient(135deg, #00959100, #00959133, #00959150, #00959177, #00959199);
 }
 
 #logo .img_wrapper img{
-  width: 87.5%;
+  width: 70vw;
   height: auto;
 }
 
