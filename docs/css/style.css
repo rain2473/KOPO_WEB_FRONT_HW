@@ -321,3 +321,20 @@ footer > div {
 footer > div > p {
   color: #fafbfb;
 }
+
+#top_button{
+  position:fixed; 
+  bottom:45px; 
+  right:35px;
+  z-index: 1;
+  width: 3vw;
+  height: auto;
+  transform: rotateZ(-90deg);
+}
+#top_button .arrow-path {
+  stroke: #00959150;
+  fill: none;
+  stroke-linecap: square;
+  stroke-miterlimit: 10;
+  stroke-width: 48;
+}

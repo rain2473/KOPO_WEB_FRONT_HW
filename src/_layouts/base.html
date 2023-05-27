@@ -12,7 +12,7 @@
     <link href="./images/logo.png" rel="shortcut icon" type="image/x-icon">
     <link href="./css/rollingbanner-js.css" rel="stylesheet" type="text/css">
     <script src="./script/rollingbanner.js"></script>
-    <script src="./script/link.js"></script>
+    <script src="./script/base.js"></script>
     <script src="./script/mainbanner.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
@@ -23,6 +23,12 @@
     </header>
     <main>
         {{content}}
+        <span id="top_button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                <title>scrollTopFixed</title>
+                <path class="arrow-path" d="M268 112l144 144-144 144M392 256H100" />
+            </svg>
+        </span>
     </main>
     <footer>
         {% include footer.html %}
@@ -32,6 +38,7 @@
         linkToPage()
         animateBackground();
         preventSelectionOnDoubleClick()
+        scrollTopFixed()
     </script>
 </body>
 </html>
