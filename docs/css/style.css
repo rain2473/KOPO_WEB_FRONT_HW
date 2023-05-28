@@ -139,16 +139,8 @@ p {
 #subject::after {
   content: '';
   margin-left: .6rem;
-  border-right: 2px rgba(76, 102, 118, 1);
+  border-right: 4vw rgba(76, 102, 118, 1);
   animation: cursor .9s infinite steps(2);
-}
-
-#subtitle::after {
-  content: '';
-  margin-left: .6rem;
-  border-right: 2px rgba(76, 102, 118, 1);
-  animation: cursor .9s infinite steps(2);
-  display: none;
 }
 
 .disable-after::after {
@@ -273,6 +265,10 @@ hr {
 
 #logo .img_wrapper .arrow_backward svg{
   transform: rotateZ(180deg);
+}
+
+#logo div:not(img_wrapper){
+  min-height: 8vh;
 }
 
 header img {

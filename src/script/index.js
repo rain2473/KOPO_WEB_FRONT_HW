@@ -3,7 +3,7 @@ function disableStyle(selector) {
     subjectElement.classList.add("disable-after");
 }
 
-function typingSubject(letters, selector, checkSubtitle) {
+function typingSubject(letters, selector, checkSubtitle, subtitle) {
     const $text = document.querySelector(selector);
     const speed = 100;
     let i = 0;
@@ -21,7 +21,7 @@ function typingSubject(letters, selector, checkSubtitle) {
         }
         else if (!checkSubtitle) {
             disableStyle("#subject");
-            typingSubject(["환영합니다"], "#subtitle", true);
+            typingSubject(subtitle, "#subtitle", true);
         }
         else {
             disableStyle("#subtitle");

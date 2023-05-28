@@ -19,8 +19,12 @@ layout : base
         </span>
     </div>
     <div>
-        <p id="subject"></p>
-        <p id="subtitle"></p>
+        <div>
+            <p id="subject"></p>
+        </div>
+        <div>
+            <p id="subtitle"></p>
+        </div>
     </div>
 </div>
 <div id="book" class="container">
@@ -81,7 +85,7 @@ layout : base
     </div>
 </div>
 <script>
-    const letters = [
+    const subject = [
         "사람은 책을 만들고,",
         "책은 사람을 만듭니다.",
         "책을 읽읍시다!",
@@ -89,5 +93,5 @@ layout : base
     ];
     rollingBanner();
     changeBanner();
-    typingSubject(letters, "#subject", false);
+    typingSubject(subject, "#subject", false, ["환영합니다"]);
 </script>
