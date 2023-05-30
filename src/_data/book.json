@@ -1,56 +1,258 @@
-{
-    "posts": [
-      {
-        "name": "책 1",
-        "rank": "1",
-        "updown":"2",
-        "change":"status up"
-      },
-      {
-        "name": "책 2",
-        "rank": "2",
-        "updown":"new",
-        "change":"status up"
-      },{
-        "name": "책 3",
-        "rank": "3",
-        "updown":"2",
-        "change":"status down"
-      },{
-        "name": "책 4",
-        "rank": "4",
-        "updown":"5",
-        "change":"status up"
-      },{
-        "name": "책 5",
-        "rank": "5",
-        "updown":"3",
-        "change":"status down"
-      },{
-        "name": "책 6",
-        "rank": "6",
-        "updown":"12",
-        "change":"status up"
-      },{
-        "name": "책 7",
-        "rank": "7",
-        "updown":"9",
-        "change":"status up"
-      },{
-        "name": "책 8",
-        "rank": "8",
-        "updown":"3",
-        "change":"status down"
-      },{
-        "name": "책 9",
-        "rank": "9",
-        "updown":"6",
-        "change":"status down"
-      },{
-        "name": "책 10",
-        "rank": "10",
-        "updown":"2",
-        "change":"status down"
-      }
-    ]
-  }
+[
+    {
+        "rental_status": "대출가능",
+        "name": "Java의 정석",
+        "author": "남궁성",
+        "publisher": "도우출판사",
+        "publishing_date": "2021-07-01",
+        "price": 30000
+    },
+    {
+        "rental_status": "대출중",
+        "name": "파이썬 라이브러리를 활용한 데이터 분석",
+        "author": "웨스 맥키니",
+        "publisher": "한빛미디어",
+        "publishing_date": "2019-09-10",
+        "price": 35000
+    },
+    {
+        "rental_status": "대출가능",
+        "name": "Effective Java",
+        "author": "Joshua Bloch",
+        "publisher": "Addison-Wesley Professional",
+        "publishing_date": "2018-01-01",
+        "price": 40000
+    },
+    {
+        "rental_status": "대출중",
+        "name": "자바 성능 튜닝 이야기",
+        "author": "김민수",
+        "publisher": "위키북스",
+        "publishing_date": "2017-12-01",
+        "price": 28000
+    },
+    {
+        "rental_status": "대출가능",
+        "name": "데이터베이스 개론",
+        "author": "안티 헤로츠",
+        "publisher": "한빛아카데미",
+        "publishing_date": "2021-03-01",
+        "price": 25000
+    },
+    {
+        "rental_status": "대출중",
+        "name": "Head First Design Patterns",
+        "author": "에릭 프리먼",
+        "publisher": "한빛미디어",
+        "publishing_date": "2019-03-20",
+        "price": 32000
+    },
+    {
+        "rental_status": "대출가능",
+        "name": "Effective Python",
+        "author": "Brett Slatkin",
+        "publisher": "Addison-Wesley Professional",
+        "publishing_date": "2020-02-15",
+        "price": 35000
+    },
+    {
+        "rental_status": "대출가능",
+        "name": "트랜드 코리아 2023",
+        "author": "김민우",
+        "publisher": "트랜드비젼",
+        "publishing_date": "2022-11-01",
+        "price": 27000
+    },
+    {
+        "rental_status": "대출중",
+        "name": "이펙티브 파이썬",
+        "author": "Brett Slatkin",
+        "publisher": "인사이트",
+        "publishing_date": "2016-12-20",
+        "price": 28000
+    },
+    {
+        "rental_status": "대출가능",
+        "name": "SQL 첫걸음",
+        "author": "아사이 아츠시",
+        "publisher": "한빛미디어",
+        "publishing_date": "2022-01-01",
+        "price": 28000
+    },
+    {
+        "rental_status": "대출가능",
+        "name": "노인과 바다",
+        "author": "어니스트 헤밍웨이",
+        "publisher": "영우출판사",
+        "publishing_date": "1990-05-01",
+        "price": 12000
+    },
+    {
+        "rental_status": "대출중",
+        "name": "1984",
+        "author": "조지 오웰",
+        "publisher": "인플루엔셜",
+        "publishing_date": "2016-01-25",
+        "price": 14000
+    },
+    {
+        "rental_status": "대출가능",
+        "name": "마인드풀니스",
+        "author": "마크 윌리엄스",
+        "publisher": "다산북스",
+        "publishing_date": "2015-12-01",
+        "price": 18000
+    },
+    {
+        "rental_status": "대출가능",
+        "name": "시선으로부터",
+        "author": "이창근",
+        "publisher": "문학동네",
+        "publishing_date": "2022-03-05",
+        "price": 14000
+    },
+    {
+        "rental_status": "대출가능",
+        "name": "파이썬 머신러닝 완벽 가이드",
+        "author": "권철민",
+        "publisher": "위키북스",
+        "publishing_date": "2019-09-10",
+        "price": 38000
+    },
+    {
+        "rental_status": "대출가능",
+        "name": "코스모스",
+        "author": "칼 세이건",
+        "publisher": "사이언스북스",
+        "publishing_date": "2018-07-01",
+        "price": 24000
+    },
+    {
+        "rental_status": "대출중",
+        "name": "해리 포터와 마법사의 돌",
+        "author": "J.K. 롤링",
+        "publisher": "문학수첩",
+        "publishing_date": "2000-11-06",
+        "price": 16000
+    },
+    {
+        "rental_status": "대출가능",
+        "name": "행복한 여행",
+        "author": "김영하",
+        "publisher": "문학동네",
+        "publishing_date": "2020-06-22",
+        "price": 14000
+    },
+    {
+        "rental_status": "대출가능",
+        "name": "인생은 소설이다",
+        "author": "김영하",
+        "publisher": "창비",
+        "publishing_date": "2015-05-13",
+        "price": 15000
+    },
+    {
+        "rental_status": "대출중",
+        "name": "미움받을 용기",
+        "author": "기시미 이치로",
+        "publisher": "갤리온",
+        "publishing_date": "2013-12-05",
+        "price": 14000
+    },
+    {
+        "rental_status": "대출가능",
+        "name": "아리랑",
+        "author": "조정래",
+        "publisher": "민음사",
+        "publishing_date": "2018-10-22",
+        "price": 15000
+    },
+    {
+        "rental_status": "대출중",
+        "name": "소년이 온다",
+        "author": "한강",
+        "publisher": "문학동네",
+        "publishing_date": "2021-09-20",
+        "price": 16000
+    },
+    {
+        "rental_status": "대출가능",
+        "name": "코어 자바스크립트",
+        "author": "정재남",
+        "publisher": "위키북스",
+        "publishing_date": "2020-07-10",
+        "price": 45000
+    },
+    {
+        "rental_status": "대출가능",
+        "name": "하이큐!!",
+        "author": "후루다테 하루이치",
+        "publisher": "대원씨아이",
+        "publishing_date": "2013-03-02",
+        "price": 6000
+    },
+    {
+        "rental_status": "대출가능",
+        "name": "나미야 잡화점의 기적",
+        "author": "히가시노 게이고",
+        "publisher": " 현대문학",
+        "publishing_date": "2012-02-01",
+        "price": 14000
+    },
+    {
+        "rental_status": "대출가능",
+        "name": "객체지향 사실과 오해",
+        "author": "조영호",
+        "publisher": "우아한형제들",
+        "publishing_date": "2017-07-01",
+        "price": 27000
+    },
+    {
+        "rental_status": "대출가능",
+        "name": "Clean Code",
+        "author": "로버트 C. 마틴",
+        "publisher": "인사이트",
+        "publishing_date": "2021-01-01",
+        "price": 32000
+    },
+    {
+        "rental_status": "대출가능",
+        "name": "모던 웹을 위한 JavaScript + jQuery 입문",
+        "author": "윤인성",
+        "publisher": "한빛미디어",
+        "publishing_date": "2016-06-01",
+        "price": 25000
+    },
+    {
+        "rental_status": "대출가능",
+        "name": "Do it! 자바 프로그래밍 입문",
+        "author": "박은종",
+        "publisher": "이지스퍼블리싱",
+        "publishing_date": "2020-08-01",
+        "price": 28000
+    },
+    {
+        "rental_status": "대출가능",
+        "name": "코어 자바스크립트",
+        "author": "김영보",
+        "publisher": "한빛미디어",
+        "publishing_date": "2018-07-01",
+        "price": 35000
+    },
+    {
+        "rental_status": "대출가능",
+        "name": "코딩 인터뷰 완전 분석",
+        "author": "게일 라크만 맥도웰",
+        "publisher": "인사이트",
+        "publishing_date": "2019-01-01",
+        "price": 29000
+    },
+    {
+        "rental_status": "대출가능",
+        "name": "Head First Design Patterns",
+        "author": "에릭 프리먼",
+        "publisher": "한빛미디어",
+        "publishing_date": "2018-06-01",
+        "price": 32000
+    }
+]

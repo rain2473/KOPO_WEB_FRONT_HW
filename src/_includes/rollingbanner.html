@@ -2,7 +2,7 @@
     <div class="wrap">
         <div class="roller original" id="roller1" style="left: -313px;">
             <ul>
-                {% for book in site.data.book.posts %}
+                {% for book in site.data.rollingbanner.posts %}
                 <li>
                     <pre>{{ book.rank }}위 : {{ book.name }} ({{ book.updown }})</pre>
                     <span class="{{book.change}}">
