@@ -15,6 +15,7 @@
     <script src="./script/base.js"></script>
     <script src="./script/index.js"></script>
     <script src="./script/mainbanner.js"></script>
+    <script src="./script/book.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
@@ -61,93 +62,287 @@
     </div>
     <div>
         <div>
-            <p id="subject"></p>
-        </div>
-        <div>
-            <p id="subtitle"></p>
+            <p id="subject">보유 도서 조회</p>
         </div>
     </div>
 </div>
 <div class="container">
     <div>
         <hr />
-        <div class="link-wrapper select" data-href="bookSearch.html">
-            <p>보유 도서 조회</p>
+        <div class="link-wrapper select" data-href="#">
+            <p>정렬 기준</p>
             <span class="one"></span>
             <span class="two"></span>
             <span class="three"></span>
             <span class="four"></span>
         </div>
     </div>
-    <div class="img_wrapper link-wrapper select" data-href="bookSearch.html">
-        <img src="./images/book/bookSearch.png">
-        <span class="one"></span>
-        <span class="two"></span>
-        <span class="three"></span>
-        <span class="four"></span>
+    <div id = "list" class="container">
+        <ul>
+            
+            <li>
+                <span>
+                    <img src="./images/book/bookcover/01.jpeg">
+                    </img>
+                    <pre>Java의 정석 <br> 남궁성 <br> (2021-07-01)</pre>
+                </span>
+            </li>
+            
+            <li>
+                <span>
+                    <img src="./images/book/bookcover/02.jpeg">
+                    </img>
+                    <pre>파이썬 라이브러리를 활용한 데이터 분석 <br> 웨스 맥키니 <br> (2019-09-10)</pre>
+                </span>
+            </li>
+            
+            <li>
+                <span>
+                    <img src="./images/book/bookcover/03.jpeg">
+                    </img>
+                    <pre>Effective Java <br> Joshua Bloch <br> (2018-01-01)</pre>
+                </span>
+            </li>
+            
+            <li>
+                <span>
+                    <img src="./images/book/bookcover/04.jpeg">
+                    </img>
+                    <pre>자바 성능 튜닝 이야기 <br> 김민수 <br> (2017-12-01)</pre>
+                </span>
+            </li>
+            
+            <li>
+                <span>
+                    <img src="./images/book/bookcover/05.jpeg">
+                    </img>
+                    <pre>데이터베이스 개론 <br> 안티 헤로츠 <br> (2021-03-01)</pre>
+                </span>
+            </li>
+            
+            <li>
+                <span>
+                    <img src="./images/book/bookcover/06.jpeg">
+                    </img>
+                    <pre>Head First Design Patterns <br> 에릭 프리먼 <br> (2019-03-20)</pre>
+                </span>
+            </li>
+            
+            <li>
+                <span>
+                    <img src="./images/book/bookcover/07.jpeg">
+                    </img>
+                    <pre>Effective Python <br> Brett Slatkin <br> (2020-02-15)</pre>
+                </span>
+            </li>
+            
+            <li>
+                <span>
+                    <img src="./images/book/bookcover/08.jpeg">
+                    </img>
+                    <pre>트랜드 코리아 2023 <br> 김민우 <br> (2022-11-01)</pre>
+                </span>
+            </li>
+            
+            <li>
+                <span>
+                    <img src="./images/book/bookcover/09.jpeg">
+                    </img>
+                    <pre>이펙티브 파이썬 <br> Brett Slatkin <br> (2016-12-20)</pre>
+                </span>
+            </li>
+            
+            <li>
+                <span>
+                    <img src="./images/book/bookcover/10.jpeg">
+                    </img>
+                    <pre>SQL 첫걸음 <br> 아사이 아츠시 <br> (2022-01-01)</pre>
+                </span>
+            </li>
+            
+            <li>
+                <span>
+                    <img src="./images/book/bookcover/11.jpeg">
+                    </img>
+                    <pre>노인과 바다 <br> 어니스트 헤밍웨이 <br> (1990-05-01)</pre>
+                </span>
+            </li>
+            
+            <li>
+                <span>
+                    <img src="./images/book/bookcover/12.jpeg">
+                    </img>
+                    <pre>1984 <br> 조지 오웰 <br> (2016-01-25)</pre>
+                </span>
+            </li>
+            
+            <li>
+                <span>
+                    <img src="./images/book/bookcover/13.jpeg">
+                    </img>
+                    <pre>마인드풀니스 <br> 마크 윌리엄스 <br> (2015-12-01)</pre>
+                </span>
+            </li>
+            
+            <li>
+                <span>
+                    <img src="./images/book/bookcover/14.jpeg">
+                    </img>
+                    <pre>시선으로부터 <br> 이창근 <br> (2022-03-05)</pre>
+                </span>
+            </li>
+            
+            <li>
+                <span>
+                    <img src="./images/book/bookcover/15.jpeg">
+                    </img>
+                    <pre>파이썬 머신러닝 완벽 가이드 <br> 권철민 <br> (2019-09-10)</pre>
+                </span>
+            </li>
+            
+            <li>
+                <span>
+                    <img src="./images/book/bookcover/16.jpeg">
+                    </img>
+                    <pre>코스모스 <br> 칼 세이건 <br> (2018-07-01)</pre>
+                </span>
+            </li>
+            
+            <li>
+                <span>
+                    <img src="./images/book/bookcover/17.jpeg">
+                    </img>
+                    <pre>해리 포터와 마법사의 돌 <br> J.K. 롤링 <br> (2000-11-06)</pre>
+                </span>
+            </li>
+            
+            <li>
+                <span>
+                    <img src="./images/book/bookcover/18.jpeg">
+                    </img>
+                    <pre>여행의 이유 <br> 김영하 <br> (2019-04-17)</pre>
+                </span>
+            </li>
+            
+            <li>
+                <span>
+                    <img src="./images/book/bookcover/19.jpeg">
+                    </img>
+                    <pre>인생은 소설이다 <br> 기욤 뮈소 <br> (2020-11-24)</pre>
+                </span>
+            </li>
+            
+            <li>
+                <span>
+                    <img src="./images/book/bookcover/20.jpeg">
+                    </img>
+                    <pre>미움받을 용기 <br> 기시미 이치로 <br> (2013-12-05)</pre>
+                </span>
+            </li>
+            
+            <li>
+                <span>
+                    <img src="./images/book/bookcover/21.jpeg">
+                    </img>
+                    <pre>아리랑 <br> 조정래 <br> (2018-10-22)</pre>
+                </span>
+            </li>
+            
+            <li>
+                <span>
+                    <img src="./images/book/bookcover/22.jpeg">
+                    </img>
+                    <pre>소년이 온다 <br> 한강 <br> (2021-09-20)</pre>
+                </span>
+            </li>
+            
+            <li>
+                <span>
+                    <img src="./images/book/bookcover/23.jpeg">
+                    </img>
+                    <pre>코어 자바스크립트 <br> 정재남 <br> (2020-07-10)</pre>
+                </span>
+            </li>
+            
+            <li>
+                <span>
+                    <img src="./images/book/bookcover/24.jpeg">
+                    </img>
+                    <pre>하이큐!! <br> 후루다테 하루이치 <br> (2013-03-02)</pre>
+                </span>
+            </li>
+            
+            <li>
+                <span>
+                    <img src="./images/book/bookcover/25.jpeg">
+                    </img>
+                    <pre>나미야 잡화점의 기적 <br> 히가시노 게이고 <br> (2012-02-01)</pre>
+                </span>
+            </li>
+            
+            <li>
+                <span>
+                    <img src="./images/book/bookcover/26.jpeg">
+                    </img>
+                    <pre>객체지향 사실과 오해 <br> 조영호 <br> (2017-07-01)</pre>
+                </span>
+            </li>
+            
+            <li>
+                <span>
+                    <img src="./images/book/bookcover/27.jpeg">
+                    </img>
+                    <pre>Clean Code <br> 로버트 C. 마틴 <br> (2021-01-01)</pre>
+                </span>
+            </li>
+            
+            <li>
+                <span>
+                    <img src="./images/book/bookcover/28.jpeg">
+                    </img>
+                    <pre>모던 웹을 위한 JavaScript + jQuery 입문 <br> 윤인성 <br> (2016-06-01)</pre>
+                </span>
+            </li>
+            
+            <li>
+                <span>
+                    <img src="./images/book/bookcover/29.jpeg">
+                    </img>
+                    <pre>Do it! 자바 프로그래밍 입문 <br> 박은종 <br> (2020-08-01)</pre>
+                </span>
+            </li>
+            
+            <li>
+                <span>
+                    <img src="./images/book/bookcover/30.jpeg">
+                    </img>
+                    <pre>코어 자바스크립트 <br> 김영보 <br> (2018-07-01)</pre>
+                </span>
+            </li>
+            
+            <li>
+                <span>
+                    <img src="./images/book/bookcover/31.jpeg">
+                    </img>
+                    <pre>코딩 인터뷰 완전 분석 <br> 게일 라크만 맥도웰 <br> (2019-01-01)</pre>
+                </span>
+            </li>
+            
+            <li>
+                <span>
+                    <img src="./images/book/bookcover/32.jpeg">
+                    </img>
+                    <pre>Head First Design Patterns <br> 에릭 프리먼 <br> (2018-06-01)</pre>
+                </span>
+            </li>
+            
+        </ul>
     </div>
 </div>
-<div class="container">
+<div id="index" class="container">
     <div>
         <hr />
-        <div class="link-wrapper select" data-href="bookStock.html">
-            <p>신규 도서 입고</p>
-            <span class="one"></span>
-            <span class="two"></span>
-            <span class="three"></span>
-            <span class="four"></span>
-        </div>
-    </div>
-    <div class="img_wrapper link-wrapper select" data-href="bookStock.html">
-        <img src="./images/book/bookStock.png">
-        <span class="one"></span>
-        <span class="two"></span>
-        <span class="three"></span>
-        <span class="four"></span>
-    </div>
-</div>
-<div class="container">
-    <div>
-        <hr />
-        <div class="link-wrapper select" data-href="bookUpdate.html">
-            <p>도서 정보 수정</p>
-            <span class="one"></span>
-            <span class="two"></span>
-            <span class="three"></span>
-            <span class="four"></span>
-        </div>
-    </div>
-    <div class="img_wrapper link-wrapper select" data-href="bookUpdate.html">
-        <img src="./images/book/bookUpdate.png">
-        <span class="one"></span>
-        <span class="two"></span>
-        <span class="three"></span>
-        <span class="four"></span>
-    </div>
-</div>
-<div class="container">
-    <div>
-        <hr />
-        <div class="link-wrapper select" data-href="bookDelete.html">
-            <p>소장 도서 삭제</p>
-            <span class="one"></span>
-            <span class="two"></span>
-            <span class="three"></span>
-            <span class="four"></span>
-        </div>
-    </div>
-    <div class="img_wrapper link-wrapper select" data-href="bookDelete.html">
-        <img src="./images/book/bookDelete.png">
-        <span class="one"></span>
-        <span class="two"></span>
-        <span class="three"></span>
-        <span class="four"></span>
-    </div>
-</div>
-<div id="index" class="container" data-href="index.html">
-    <div>
-        <hr />
-        <div class="link-wrapper select" data-href="index.html">
+        <div class="link-wrapper select" data-href="book.html">
             <p>돌아가기</p>
             <span class="one"></span>
             <span class="two"></span>
@@ -157,7 +352,8 @@
     </div>
 </div>
 <script>
-    typingSubject(["도서 관리 페이지"], "#subject", false, ["수행할 도서 관리 기능을 선택하세요"]);
+    disableStyle("#subject");
+    displayJsonData("../css/book.json");
 </script>
         <span id="top_button">
             <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
