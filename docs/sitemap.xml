@@ -16,6 +16,9 @@
 <loc>http://localhost:4000/memberSearch.html</loc>
 </url>
 <url>
+<loc>http://localhost:4000/memberSignin.html</loc>
+</url>
+<url>
 <loc>http://localhost:4000/rent.html</loc>
 </url>
 <url>

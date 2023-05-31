@@ -61,113 +61,52 @@
     </div>
     <div>
         <div>
-            <p id="subject"></p>
+            <p id="subject">신규 회원 등록</p>
+        </div>
+    </div>
+</div>
+<div id="form" class="container">
+    <div id = "Mname" class="field">
+        <div>
+            <p>이름</p>
         </div>
         <div>
-            <p id="subtitle"></p>
+            <input type="text" placeholder="홍길동">
+        </div>
+    </div>
+
+    <div id = "Mbirth" class="field">
+        <div>
+            <p>생년월일</p>
+        </div>
+        <div>
+            <input type="number" placeholder="YYYYMMDD">
+        </div>
+    </div>
+
+    <div id = "Maddress" class="field">
+        <div>
+            <p>주소</p>
+        </div>
+        <div>
+            <input type="text" placeholder="주소 입력">
+        </div>
+    </div>
+
+    <div id = "Mcontact" class="field">
+        <div>
+            <p>휴대전화</p>
+        </div>
+        <div>
+            <input type="tel" placeholder="010-1234-5678">
         </div>
     </div>
 </div>
 <div class="container">
     <div>
         <hr />
-        <div class="link-wrapper select" data-href="memberSearch.html">
-            <p>등록 회원 조회</p>
-            <span class="one"></span>
-            <span class="two"></span>
-            <span class="three"></span>
-            <span class="four"></span>
-        </div>
-    </div>
-    <div class="img_wrapper link-wrapper select" data-href="memberSearch.html">
-        <img src="./images/member/memberSearch.png">
-        <span class="one"></span>
-        <span class="two"></span>
-        <span class="three"></span>
-        <span class="four"></span>
-    </div>
-</div>
-<div class="container">
-    <div>
-        <hr />
-        <div class="link-wrapper select" data-href="memberSignin.html">
-            <p>신규 회원 가입</p>
-            <span class="one"></span>
-            <span class="two"></span>
-            <span class="three"></span>
-            <span class="four"></span>
-        </div>
-    </div>
-    <div class="img_wrapper link-wrapper select" data-href="memberSignin.html">
-        <img src="./images/member/memberSignin.png">
-        <span class="one"></span>
-        <span class="two"></span>
-        <span class="three"></span>
-        <span class="four"></span>
-    </div>
-</div>
-<div class="container">
-    <div>
-        <hr />
-        <div class="link-wrapper select" data-href="unfinished.html">
-            <p>회원 정보 수정</p>
-            <span class="one"></span>
-            <span class="two"></span>
-            <span class="three"></span>
-            <span class="four"></span>
-        </div>
-    </div>
-    <div class="img_wrapper link-wrapper select" data-href="unfinished.html">
-        <img src="./images/member/memberUpdate.png">
-        <span class="one"></span>
-        <span class="two"></span>
-        <span class="three"></span>
-        <span class="four"></span>
-    </div>
-</div>
-<div class="container">
-    <div>
-        <hr />
-        <div class="link-wrapper select" data-href="unfinished.html">
-            <p>회원 탈퇴</p>
-            <span class="one"></span>
-            <span class="two"></span>
-            <span class="three"></span>
-            <span class="four"></span>
-        </div>
-    </div>
-    <div class="img_wrapper link-wrapper select" data-href="unfinished.html">
-        <img src="./images/member/memberDelete.png">
-        <span class="one"></span>
-        <span class="two"></span>
-        <span class="three"></span>
-        <span class="four"></span>
-    </div>
-</div>
-<div class="container">
-    <div>
-        <hr />
-        <div class="link-wrapper select" data-href="unfinished.html">
-            <p>탈퇴 회원 복구</p>
-            <span class="one"></span>
-            <span class="two"></span>
-            <span class="three"></span>
-            <span class="four"></span>
-        </div>
-    </div>
-    <div class="img_wrapper link-wrapper select" data-href="unfinished.html">
-        <img src="./images/member/memberComeback.png">
-        <span class="one"></span>
-        <span class="two"></span>
-        <span class="three"></span>
-        <span class="four"></span>
-    </div>
-</div>
-<div id="index" class="container">
-    <div>
-        <hr />
-        <div class="link-wrapper select" data-href="index.html">
-            <p>돌아가기</p>
+        <div id="submit" class="select">
+            <p>등록하기</p>
             <span class="one"></span>
             <span class="two"></span>
             <span class="three"></span>
@@ -176,7 +115,8 @@
     </div>
 </div>
 <script>
-    typingSubject(["회원 관리 페이지"], "#subject", false, ["수행할 회원 관리 기능을 선택하세요"]);
+    disableStyle("#subject");
+    memberSignIn();
 </script>
         <span id="top_button">
             <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">

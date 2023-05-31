@@ -1,0 +1,66 @@
+---
+layout : base
+---
+<div id="logo" class="container">
+    <div class="img_wrapper">
+        <img src="./images/index/member.png">
+    </div>
+    <div>
+        <div>
+            <p id="subject">신규 회원 등록</p>
+        </div>
+    </div>
+</div>
+<div id="form" class="container">
+    <div id = "Mname" class="field">
+        <div>
+            <p>이름</p>
+        </div>
+        <div>
+            <input type="text" placeholder="홍길동">
+        </div>
+    </div>
+
+    <div id = "Mbirth" class="field">
+        <div>
+            <p>생년월일</p>
+        </div>
+        <div>
+            <input type="number" placeholder="YYYYMMDD">
+        </div>
+    </div>
+
+    <div id = "Maddress" class="field">
+        <div>
+            <p>주소</p>
+        </div>
+        <div>
+            <input type="text" placeholder="주소 입력">
+        </div>
+    </div>
+
+    <div id = "Mcontact" class="field">
+        <div>
+            <p>휴대전화</p>
+        </div>
+        <div>
+            <input type="tel" placeholder="010-1234-5678">
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div>
+        <hr />
+        <div id="submit" class="select">
+            <p>등록하기</p>
+            <span class="one"></span>
+            <span class="two"></span>
+            <span class="three"></span>
+            <span class="four"></span>
+        </div>
+    </div>
+</div>
+<script>
+    disableStyle("#subject");
+    memberSignIn();
+</script>

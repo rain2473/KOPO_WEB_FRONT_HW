@@ -60,3 +60,92 @@ function displayJsonData(url, colOrder) {
         document.getElementById('list').appendChild(table);
     });
 }
+
+function memberSignIn() {
+    document.querySelector("#submit").addEventListener("click", function (event) {
+        event.preventDefault();
+
+        var name = document.querySelector("#Mname input").value;
+        var birthday = document.querySelector("#Mbirth input").value;
+        var address = document.querySelector("#Maddress input").value;
+        var phone = document.querySelector("#Mcontact input").value;
+
+        if (!validatePhoneNumber(phone)) {
+            alert("올바른 전화번호 형식이 아닙니다. (010-xxxx-xxxx)")
+            return;
+        }
+
+        if (!validateBirthday(birthday)) {
+            alert("올바른 생년월일 형식이 아닙니다. (YYYYMMDD)")
+            return;
+        }
+
+        if (!validateName(name)) {
+            alert("올바른 이름 형식이 아닙니다. (한글만 가능)")
+            return;
+        }
+
+        phone = formatPhoneNumber(phone);
+        birthday = formatBirthday(birthday);
+        var currentDate = new Date();
+        var age = calculateAge(birthday);
+
+        var member = {
+            rent_status: "대출 가능",
+            name: name,
+            join_date: currentDate.toLocaleString(),
+            address: address,
+            contact: phone,
+            birthday: birthday,
+            age: age
+        };
+
+        saveMemberInfo(member);
+    });
+
+    function validatePhoneNumber(phone) {
+        var phoneRegex = /^010-\d{4}-\d{4}$/;
+        return phoneRegex.test(phone);
+    }
+
+    function validateBirthday(birthday) {
+        var birthdayRegex = /^\d{8}$/;
+        return birthdayRegex.test(birthday);
+    }
+
+    function validateName(name) {
+        var nameRegex = /^[가-힣]+$/;
+        return nameRegex.test(name);
+    }
+
+    function formatPhoneNumber(phone) {
+        var formattedPhone = "010-" + phone.substr(0, 4) + "-" + phone.substr(4, 4);
+        return formattedPhone;
+    }
+
+    function formatBirthday(birthday) {
+        var year = birthday.substr(0, 4);
+        var month = birthday.substr(4, 2);
+        var day = birthday.substr(6, 2);
+        var formattedBirthday = year + "-" + month + "-" + day;
+        return formattedBirthday;
+    }
+
+    function calculateAge(birthday) {
+        var birthDate = new Date(birthday);
+        var currentDate = new Date();
+        var age = currentDate.getFullYear() - birthDate.getFullYear();
+
+        var monthDiff = currentDate.getMonth() - birthDate.getMonth();
+        if (monthDiff < 0 || (monthDiff === 0 && currentDate.getDate() < birthDate.getDate())) {
+            age--;
+        }
+
+        return age;
+    }
+
+    function saveMemberInfo(member) {
+        alert('JavaScript로 JSON 파일을 수정하는 것은 불가능합니다.');
+        window.location.href = 'member.html';
+    }    
+}

@@ -16,7 +16,7 @@ function linkToPage() {
 
 function cursorChange() {
     document.addEventListener("DOMContentLoaded", function () {
-        let arrows = document.querySelectorAll(".arrow_backward, .arrow_forward, .link-wrapper");
+        let arrows = document.querySelectorAll(".arrow_backward, .arrow_forward, .link-wrapper, .select");
 
         arrows.forEach(function (arrow) {
             arrow.addEventListener("mouseenter", function () {
