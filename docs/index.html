@@ -13,9 +13,9 @@
     <link href="./css/rollingbanner-js.css" rel="stylesheet" type="text/css">
     <script src="./script/rollingbanner.js"></script>
     <script src="./script/base.js"></script>
-    <script src="./script/index.js"></script>
+    <script src="./script/subjectTypingEffect.js"></script>
     <script src="./script/mainbanner.js"></script>
-    <script src="./script/book.js"></script>
+    <script src="./script/list.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
@@ -256,9 +256,11 @@
         "책을 읽읍시다!",
         "도서 대출 프로그램"
     ];
-    rollingBanner();
     changeBanner();
     typingSubject(subject, "#subject", false, ["환영합니다"]);
+</script>
+<script>
+    rollingBanner();
 </script>
         <span id="top_button">
             <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">

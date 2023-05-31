@@ -13,9 +13,9 @@
     <link href="./css/rollingbanner-js.css" rel="stylesheet" type="text/css">
     <script src="./script/rollingbanner.js"></script>
     <script src="./script/base.js"></script>
-    <script src="./script/index.js"></script>
+    <script src="./script/subjectTypingEffect.js"></script>
     <script src="./script/mainbanner.js"></script>
-    <script src="./script/book.js"></script>
+    <script src="./script/list.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
@@ -58,97 +58,24 @@
     <main>
         <div id="logo" class="container">
     <div class="img_wrapper">
-        <img src="./images/index/book.png">
+        <img src="./images/index/member.png">
     </div>
     <div>
         <div>
-            <p id="subject"></p>
-        </div>
-        <div>
-            <p id="subtitle"></p>
+            <p id="subject">등록 회원 조회</p>
         </div>
     </div>
 </div>
-<div class="container">
-    <div>
-        <hr />
-        <div class="link-wrapper select" data-href="bookSearch.html">
-            <p>보유 도서 조회</p>
-            <span class="one"></span>
-            <span class="two"></span>
-            <span class="three"></span>
-            <span class="four"></span>
-        </div>
-    </div>
-    <div class="img_wrapper link-wrapper select" data-href="bookSearch.html">
-        <img src="./images/book/bookSearch.png">
-        <span class="one"></span>
-        <span class="two"></span>
-        <span class="three"></span>
-        <span class="four"></span>
-    </div>
+<div id="list" class="container">
+    <script>
+        let colOrder = ['image_src', 'name', 'contact', 'address', 'age', 'birthday', 'rental_status'];
+        displayJsonData("../data/member.json", colOrder);
+    </script>
 </div>
-<div class="container">
+<div id="index" class="container">
     <div>
         <hr />
-        <div class="link-wrapper select">
-            <p>신규 도서 입고</p>
-            <span class="one"></span>
-            <span class="two"></span>
-            <span class="three"></span>
-            <span class="four"></span>
-        </div>
-    </div>
-    <div class="img_wrapper link-wrapper select" data-href="bookStock.html">
-        <img src="./images/book/bookStock.png">
-        <span class="one"></span>
-        <span class="two"></span>
-        <span class="three"></span>
-        <span class="four"></span>
-    </div>
-</div>
-<div class="container">
-    <div>
-        <hr />
-        <div class="link-wrapper select" data-href="bookUpdate.html">
-            <p>도서 정보 수정</p>
-            <span class="one"></span>
-            <span class="two"></span>
-            <span class="three"></span>
-            <span class="four"></span>
-        </div>
-    </div>
-    <div class="img_wrapper link-wrapper select" data-href="bookUpdate.html">
-        <img src="./images/book/bookUpdate.png">
-        <span class="one"></span>
-        <span class="two"></span>
-        <span class="three"></span>
-        <span class="four"></span>
-    </div>
-</div>
-<div class="container">
-    <div>
-        <hr />
-        <div class="link-wrapper select" data-href="bookDelete.html">
-            <p>소장 도서 삭제</p>
-            <span class="one"></span>
-            <span class="two"></span>
-            <span class="three"></span>
-            <span class="four"></span>
-        </div>
-    </div>
-    <div class="img_wrapper link-wrapper select" data-href="bookDelete.html">
-        <img src="./images/book/bookDelete.png">
-        <span class="one"></span>
-        <span class="two"></span>
-        <span class="three"></span>
-        <span class="four"></span>
-    </div>
-</div>
-<div id="index" class="container" data-href="index.html">
-    <div>
-        <hr />
-        <div class="link-wrapper select" data-href="index.html">
+        <div class="link-wrapper select" data-href="member.html">
             <p>돌아가기</p>
             <span class="one"></span>
             <span class="two"></span>
@@ -158,7 +85,7 @@
     </div>
 </div>
 <script>
-    typingSubject(["도서 관리 페이지"], "#subject", false, ["수행할 도서 관리 기능을 선택하세요"]);
+    disableStyle("#subject");
 </script>
         <span id="top_button">
             <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">

@@ -1,5 +1,4 @@
-// 함수 정의
-function displayJsonData(url) {
+function displayJsonData(url, colOrder) {
     function getHttpRequest(url, callback) {
         var request = new XMLHttpRequest();
         request.onreadystatechange = function (event) {
@@ -19,31 +18,26 @@ function displayJsonData(url) {
         request.send();
     }
 
-    function createTable(obj) {
+    function createTable(obj, colOrder) {
         let table = document.createElement('table');
         table.classList.add("table");
         let i = 1;
         let thead = document.createElement('thead');
         let tbody = document.createElement('tbody');
-        let keys = Object.keys(obj[0]);
-
-        let headerRow = document.createElement('tr');
-        keys.forEach(key => {
-            let th = document.createElement('th');
-            th.textContent = key;
-            headerRow.appendChild(th);
-        });
-        thead.appendChild(headerRow);
-        table.appendChild(thead);
 
         obj.forEach(el => {
             let tr = document.createElement('tr');
-            keys.forEach(key => {
+            colOrder.forEach(col => {
                 let td = document.createElement('td');
-                if (key === 'image') {
-                    td.appendChild(el[key]);
+                if (col === 'image') {
+                    td.appendChild(el[col]);
+                } else if (col === 'image_src') {
+                    td.textContent = i++;
                 } else {
-                    td.textContent = el[key];
+                    td.textContent = el[col];
+                    if (col === 'rental_status' && el[col] === '대출중') {
+                        td.classList.add('rental-status-red'); // 대출중인 경우 클래스 추가
+                    }
                 }
                 tr.appendChild(td);
             });
@@ -62,8 +56,7 @@ function displayJsonData(url) {
             cover.src = json[object].image_src;
             json[object].image = cover;
         }
-
-        let table = createTable(json);
-        document.body.appendChild(table);
+        let table = createTable(json, colOrder);
+        document.getElementById('list').appendChild(table);
     });
 }

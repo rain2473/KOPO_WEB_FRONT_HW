@@ -1,0 +1,200 @@
+[
+    {
+        "rent_status": "대출가능",
+        "name": "김영수",
+        "join_date": "2022-08-15",
+        "address": "서울시 강남구 역삼동 123-4",
+        "contact": "010-1234-5678",
+        "birthday": "1990-01-01",
+        "age": 32
+    },
+    {
+        "rent_status": "대출가능",
+        "name": "박민지",
+        "join_date": "2022-08-16",
+        "address": "서울시 송파구 잠실동 123-4",
+        "contact": "010-2345-6789",
+        "birthday": "1995-05-01",
+        "age": 27
+    },
+    {
+        "rent_status": "대출가능",
+        "name": "이동휘",
+        "join_date": "2022-08-17",
+        "address": "경기도 성남시 분당구 정자동 123-4",
+        "contact": "010-3456-7890",
+        "birthday": "1998-10-01",
+        "age": 23
+    },
+    {
+        "rent_status": "대출가능",
+        "name": "박서준",
+        "join_date": "2022-08-18",
+        "address": "서울시 강서구 화곡동 123-4",
+        "contact": "010-4567-8901",
+        "birthday": "1988-06-01",
+        "age": 34
+    },
+    {
+        "rent_status": "대출가능",
+        "name": "임영웅",
+        "join_date": "2022-08-19",
+        "address": "경기도 용인시 기흥구 동백동 123-4",
+        "contact": "010-5678-9012",
+        "birthday": "1992-03-01",
+        "age": 30
+    },
+    {
+        "rent_status": "대출가능",
+        "name": "손흥민",
+        "join_date": "2022-08-20",
+        "address": "서울시 마포구 동교동 123-4",
+        "contact": "010-6789-0123",
+        "birthday": "1992-07-08",
+        "age": 29
+    },
+    {
+        "rent_status": "대출가능",
+        "name": "강동원",
+        "join_date": "2022-08-21",
+        "address": "서울시 강남구 청담동 123-4",
+        "contact": "010-7890-1234",
+        "birthday": "1981-01-18",
+        "age": 42
+    },
+    {
+        "rent_status": "대출가능",
+        "name": "김지수",
+        "join_date": "2021-01-01",
+        "address": "서울시 강남구",
+        "contact": "010-1534-5378",
+        "birthday": "1990-01-01",
+        "age": 33
+    },
+    {
+        "rent_status": "대출가능",
+        "name": "박민주",
+        "join_date": "2021-01-02",
+        "address": "서울시 강동구",
+        "contact": "010-2385-6739",
+        "birthday": "1995-03-15",
+        "age": 28
+    },
+    {
+        "rent_status": "대출가능",
+        "name": "이승민",
+        "join_date": "2021-01-03",
+        "address": "서울시 강서구",
+        "contact": "010-3455-7800",
+        "birthday": "2000-06-01",
+        "age": 21
+    },
+    {
+        "rent_status": "대출가능",
+        "name": "장은정",
+        "join_date": "2021-01-04",
+        "address": "서울시 관악구",
+        "contact": "010-4467-8901",
+        "birthday": "1985-12-31",
+        "age": 36
+    },
+    {
+        "rent_status": "대출가능",
+        "name": "홍길동",
+        "join_date": "2021-01-05",
+        "address": "서울시 광진구",
+        "contact": "010-5678-9013",
+        "birthday": "1992-09-18",
+        "age": 29
+    },
+    {
+        "rent_status": "대출가능",
+        "name": "최지영",
+        "join_date": "2021-01-06",
+        "address": "서울시 구로구",
+        "contact": "010-6789-0423",
+        "birthday": "2002-07-12",
+        "age": 19
+    },
+    {
+        "rent_status": "대출가능",
+        "name": "김수빈",
+        "join_date": "2021-01-07",
+        "address": "서울시 노원구",
+        "contact": "010-7890-1734",
+        "birthday": "1997-11-23",
+        "age": 26
+    },
+    {
+        "rent_status": "대출가능",
+        "name": "박지현",
+        "join_date": "2021-01-08",
+        "address": "서울시 도봉구",
+        "contact": "010-8911-2345",
+        "birthday": "1989-05-05",
+        "age": 32
+    },
+    {
+        "rent_status": "대출가능",
+        "name": "김철수",
+        "join_date": "2022-03-15",
+        "address": "서울시 강남구 역삼동 123-1",
+        "contact": "010-5234-5678",
+        "birthday": "1995-01-01",
+        "age": 28
+    },
+    {
+        "rent_status": "대출가능",
+        "name": "박영희",
+        "join_date": "2021-05-25",
+        "address": "서울시 관악구 신림동 321-3",
+        "contact": "010-5678-1234",
+        "birthday": "1998-10-10",
+        "age": 25
+    },
+    {
+        "rent_status": "대출가능",
+        "name": "이수현",
+        "join_date": "2021-08-12",
+        "address": "서울시 강서구 화곡동 564-7",
+        "contact": "010-9876-5432",
+        "birthday": "2000-05-20",
+        "age": 21
+    },
+    {
+        "rent_status": "대출가능",
+        "name": "홍길동",
+        "join_date": "2022-01-10",
+        "address": "서울시 종로구 효자동 87-4",
+        "contact": "010-2222-3333",
+        "birthday": "1992-07-15",
+        "age": 31
+    },
+    {
+        "rent_status": "대출가능",
+        "name": "신영숙",
+        "join_date": "2023-02-01",
+        "address": "서울시 동대문구 장안동 456-8",
+        "contact": "010-1111-2222",
+        "birthday": "1996-11-22",
+        "age": 27
+    },
+    {
+        "rent_status": "대출가능",
+        "name": "장미영",
+        "join_date": "2021-12-05",
+        "address": "서울시 강동구 성내동 432-1",
+        "contact": "010-4444-5555",
+        "birthday": "1985-04-30",
+        "age": 38
+    },
+    {
+        "rent_status": "대출가능",
+        "name": "김민준",
+        "join_date": "2022-06-30",
+        "address": "서울시 송파구 잠실동 789-2",
+        "contact": "010-7777-8888",
+        "birthday": "1994-09-14",
+        "age": 29
+    }
+]

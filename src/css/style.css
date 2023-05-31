@@ -377,26 +377,40 @@ footer>div>p {
 }
 
 #list{
-  width: 90%;
+  width: 90vw;
 }
 
-.container>ul {
+#list table {
   width: 100%;
   padding: 0;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   align-content: center;
-  list-style-type: none;
+  color: rgba(76, 102, 118, 1);
 }
 
-.container>ul li {
-  width : 25%;
-  margin : 4%;
+#list table thead{
+  width: 80%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 
 #list img{
-  height: 30vh;
+  height: 15vw;
+  width: 10vw;
+}
+
+#list td{
+  text-align: center;
+  padding: 1vw;
+}
+
+.rental-status-red {
+  color: red; /* 대출중일 때 텍스트 색상을 빨강으로 설정 */
 }

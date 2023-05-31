@@ -3,24 +3,24 @@ layout : base
 ---
 <div id="logo" class="container">
     <div class="img_wrapper">
-        <img src="./images/index/book.png">
+        <img src="./images/index/member.png">
     </div>
     <div>
         <div>
-            <p id="subject">보유 도서 조회</p>
+            <p id="subject">등록 회원 조회</p>
         </div>
     </div>
 </div>
 <div id="list" class="container">
     <script>
-        let colOrder = ['image_src', 'image', 'name', 'author', 'publisher', 'publishing_date', 'price', 'rental_status'];
-        displayJsonData("../data/book.json", colOrder);
+        let colOrder = ['image_src', 'name', 'contact', 'address', 'age', 'birthday', 'rental_status'];
+        displayJsonData("../data/member.json", colOrder);
     </script>
 </div>
 <div id="index" class="container">
     <div>
         <hr />
-        <div class="link-wrapper select" data-href="book.html">
+        <div class="link-wrapper select" data-href="member.html">
             <p>돌아가기</p>
             <span class="one"></span>
             <span class="two"></span>
