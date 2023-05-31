@@ -35,7 +35,7 @@ function displayJsonData(url, colOrder) {
                     td.textContent = i++;
                 } else {
                     td.textContent = el[col];
-                    if (col === 'rental_status' && el[col] === '대출중') {
+                    if ((col === 'rental_status' || col === 'rent_status') && el[col] === '대출중') {
                         td.classList.add('rental-status-red'); // 대출중인 경우 클래스 추가
                     }
                 }

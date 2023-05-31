@@ -9,7 +9,7 @@
         "age": 32
     },
     {
-        "rent_status": "대출가능",
+        "rent_status": "대출중",
         "name": "박민지",
         "join_date": "2022-08-16",
         "address": "서울시 송파구 잠실동 123-4",
@@ -72,7 +72,7 @@
         "age": 33
     },
     {
-        "rent_status": "대출가능",
+        "rent_status": "대출중",
         "name": "박민주",
         "join_date": "2021-01-02",
         "address": "서울시 강동구",
@@ -126,7 +126,7 @@
         "age": 26
     },
     {
-        "rent_status": "대출가능",
+        "rent_status": "대출중",
         "name": "박지현",
         "join_date": "2021-01-08",
         "address": "서울시 도봉구",
@@ -162,7 +162,7 @@
         "age": 21
     },
     {
-        "rent_status": "대출가능",
+        "rent_status": "대출중",
         "name": "홍길동",
         "join_date": "2022-01-10",
         "address": "서울시 종로구 효자동 87-4",
@@ -180,7 +180,7 @@
         "age": 27
     },
     {
-        "rent_status": "대출가능",
+        "rent_status": "대출중",
         "name": "장미영",
         "join_date": "2021-12-05",
         "address": "서울시 강동구 성내동 432-1",
@@ -189,7 +189,7 @@
         "age": 38
     },
     {
-        "rent_status": "대출가능",
+        "rent_status": "대출중",
         "name": "김민준",
         "join_date": "2022-06-30",
         "address": "서울시 송파구 잠실동 789-2",
