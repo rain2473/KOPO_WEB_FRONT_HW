@@ -1,8 +1,59 @@
+/* 하나금융그룹 폰트 */
+@font-face {
+    font-family: Hana2-Light;
+    src: url('../font/Hana2.0_TTF/Hana2-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Hana2-Regular;
+    src: url('../font/Hana2.0_TTF/Hana2-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Hana2-Medium;
+    src: url('../font/Hana2.0_TTF/Hana2-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Hana2-Bold;
+    src: url('../font/Hana2.0_TTF/Hana2-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Hana2-Heavy;
+    src: url('../font/Hana2.0_TTF/Hana2-Heavy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Hana2-CM;
+    src: url('../font/Hana2.0_TTF/Hana2-CM.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 오뮤_다예쁨체;
+    src: url('../font/Hana2.0_TTF/오뮤_다예쁨체.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .rollingbanner {
     width: 100%;
     height: 2.5vw;
     min-height: 20px;
     font-size: 1.4vw;
+    font-family: Hana2-Medium;
     color: #fafbfb;
     background-color: #009591;
 }
@@ -81,7 +132,7 @@
     height: 100%;
 }
 
-.roller>ul>li pre{
+.roller>ul>li pre {
     display: flex;
     height: 100%;
     margin: 0 auto;
