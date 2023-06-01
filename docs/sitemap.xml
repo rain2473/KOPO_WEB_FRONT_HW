@@ -16,12 +16,16 @@
 <loc>http://localhost:4000/memberSearch.html</loc>
 </url>
 <url>
-<loc>http://localhost:4000/memberSignin.html</loc>
+<loc>http://localhost:4000/memberSignIn.html</loc>
 </url>
 <url>
 <loc>http://localhost:4000/rent.html</loc>
 </url>
 <url>
 <loc>http://localhost:4000/unfinished.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/quiz01.html</loc>
+<lastmod>2023-06-01T11:09:41+09:00</lastmod>
 </url>
 </urlset>
